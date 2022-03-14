@@ -1,2 +1,2 @@
-@@include('./testwebp.js')
 @@include('./slick.js')
+@@include('./rangeSlider.js')
