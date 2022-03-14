@@ -189,7 +189,7 @@
     width: 26px;
     height: 18px;
     font-size: 12px;
-    line-height: 14px;
+    line-height: 15px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -396,6 +396,7 @@
 }
 
 .slider{
+  margin-bottom: 38px;
   &__background{
     background-image: url('../img/slider/slider-bg.jpg');
     background-repeat: no-repeat;
@@ -504,5 +505,71 @@
   }
   .slick-dots li + li{
     margin-left: 15px;
+  }
+}
+
+.cars{
+  margin-bottom: 64px;
+  &__inner{
+    padding: 22px 30px;
+    background-color: #EFF0F0;
+    border-radius: 11px;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__list{
+    display: flex;
+  }
+  &__items{
+    width: 138px;
+  }
+  &__items + .cars__items{
+    margin-left: 30px;
+  }
+  &__item{
+    display: flex;
+    align-items: center;
+  }
+  &__logo{
+    margin-right: 10px;
+  }
+  &__name{
+    font-size: 14px;
+    line-height: 41px;
+    color: #262626;
+  }
+  &__title{
+    font-size: 24px;
+    line-height: 28px;
+    @extend %roboto-900;
+    color: #262626;
+    margin-bottom: 22px;
+  }
+
+  &__filter-selects{
+    margin-bottom: 25px;
+  }
+  &__filter-price{
+    max-width: 490px;
+  }
+  &__filter-body,
+  &__filter-box{
+    padding: 22px 15px;
+    border: 1px solid #E1E1E1;
+    border-radius: 6px;
+    font-size: 14px;
+    line-height: 16px;
+    color: #262626;
+  }
+  &__filter-btn{
+    padding: 17px 192px;
+    border: none;
+    color: #fff;
+    background-color: #CA0100;
+    border-radius: 6px;
+    font-size: 16px;
+    line-height: 19px;
+    @extend %roboto-700;
+    text-transform: uppercase;
   }
 }
