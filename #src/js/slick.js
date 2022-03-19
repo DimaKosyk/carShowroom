@@ -7,8 +7,8 @@ $(function () {
     nextArrow: '<button class="slider-btn slider-btn__next" aria-label="next button"><svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">< g clip- path="url(#clip0_1565_19362)" ><path d="M25.9926 15.3168L11.3731 0.697834C10.4431 -0.23259 8.93532 -0.23259 8.00579 0.697834C7.07619 1.62743 7.07619 3.13515 8.00579 4.06467L20.9418 17.0003L8.00617 29.9354C7.07657 30.8654 7.07657 32.3729 8.00617 33.3025C8.93577 34.2325 10.4435 34.2325 11.3735 33.3025L25.993 18.6833C26.4578 18.2183 26.6899 17.6094 26.6899 17.0003C26.6899 16.3909 26.4573 15.7816 25.9926 15.3168Z" fill="#262626" /></ ><defs><clipPath id="clip0_1565_19362"><rect width="34" height="34" fill="white" transform="matrix(1 -8.74228e-08 -8.74228e-08 -1 0 34)" /></clipPath></defs></svg ></button>',
   });
 
-  $('.groups__items, .offer__items').slick({
-    slidesToShow: 3,
+  $('.groups__items, .offer__items, .partners__items, .rating__items').slick({
+    // slidesToShow: 3,
     arrows: true,
     variableWidth: true,
     prevArrow: '<button class="slider-btn slider-btn__prev" aria-label="previous button"><svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">< g clip- path="url(#clip0_2866_9427)" ><path d="M2.82752 5.40594L7.98735 0.246294C8.31557 -0.0820914 8.84774 -0.0820914 9.17581 0.246294C9.5039 0.574387 9.5039 1.10652 9.17581 1.43459L4.61016 6.00009L9.17567 10.5654C9.50377 10.8937 9.50377 11.4257 9.17567 11.7538C8.84758 12.0821 8.31544 12.0821 7.98721 11.7538L2.82739 6.5941C2.66334 6.42998 2.58141 6.2151 2.58141 6.00011C2.58141 5.78502 2.6635 5.56999 2.82752 5.40594Z" fill="#262626" /></ ><defs><clipPath id="clip0_2866_9427"><rect width="12" height="12" fill="white" transform="translate(12 12) rotate(-180)" /></clipPath></defs></svg ></button>',

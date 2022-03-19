@@ -349,16 +349,31 @@
   &__address{
     margin-bottom: 20px;
   }
-  &__contact-cities{
+  .jq-selectbox__select {
     width: 326px;
     height: 40px;
-    background-color: #595D60;
-    color: #fff;
+    padding: 11px 0px 29px 15px;
     border: none;
     border-radius: 9px;
-    padding: 0 15px;
+    background: #595D60;
+    box-shadow: none;
+    font-size: 16px;
+    line-height: 19px;
+    color: #fff;
+    text-shadow: none;
   }
-
+  .jq-selectbox__trigger {
+    border-left: none;
+  }
+  .jq-selectbox__trigger-arrow {
+    position: absolute;
+    top: 16px;
+    right: 15px;
+    width: 12px;
+    height: 12px;
+    border: none;
+    background-image: url('../img/footer/icon/angle-down-white.svg');
+  }
   &__copy{
     background-color: #1B1B1B;
   }
@@ -552,14 +567,36 @@
   &__filter-price{
     max-width: 490px;
   }
-  &__filter-body,
-  &__filter-box{
-    padding: 22px 15px;
+  .irs--flat.irs-with-grid {
+    height: 60px;
+    margin-bottom: 20px;
+  }
+  .jq-selectbox__select {
+    width: 237px;
+    padding: 22px 0px 36px 15px;
     border: 1px solid #E1E1E1;
     border-radius: 6px;
+    background: #fff;
+    box-shadow: none;
     font-size: 14px;
     line-height: 16px;
     color: #262626;
+    text-shadow: none;
+  }
+  .jq-selectbox__trigger {
+    border-left: none;
+  }
+  .jq-selectbox__trigger-arrow {
+    position: absolute;
+    top: 24px;
+    right: 15px;
+    width: 12px;
+    height: 12px;
+    border: none;
+    background-image: url('../img/cars/angle-down.svg');
+  }
+  &__filter-body{
+    margin-right: 15px;
   }
   &__filter-btn{
     padding: 17px 192px;
@@ -791,9 +828,6 @@
   &__item{
     position: relative;
   }
-  &__item + .groups__item{
-    margin-left: 30px;
-  }
   &__item-image{
     display: flex;
     align-items: center;
@@ -824,32 +858,6 @@
     margin-right: 29px;
   }
 }
-
-.groups,
-.offer{
-  .slider-btn{
-    position: absolute;
-    right: 0;
-    top: -98px;
-    width: 48px;
-    height: 48px;
-    box-shadow: 0px 0px 30px rgba(133, 147, 159, 0.3);
-    border-radius: 6px;
-    border: none;
-    background-color: transparent;
-    cursor: pointer;
-  }
-  .slider-btn__prev{
-    right: 60px;
-  }
-  .slider-btn:hover{
-    background-color: #CA0100;
-    path{
-      fill: #fff;
-    }
-  }
-}
-
 
 .offer{
   margin-bottom: 53px;
@@ -966,5 +974,144 @@
   }
   .slick-slide{
     margin-right: 29px;
+  }
+}
+
+.partners{
+  margin-bottom: 110px;
+  &__title{
+    margin-bottom: 45px;
+  }
+  .slick-slide{
+    margin-right: 30px;
+  }
+}
+
+.rating{
+  margin-bottom: 90px;
+  &__title{
+    margin-bottom: 40px;
+  }
+  &__items{
+    margin-bottom: 54px;
+  }
+  &__item{
+    background-color: #FFFFFF;
+    box-shadow: 0px 0px 30px rgba(133, 147, 159, 0.3);
+    border-radius: 10px;
+  }
+  &__item-title{
+    font-size: 20px;
+    line-height: 23px;
+    @extend %roboto-900;
+    color: #262626;
+    padding: 23px 22px 0;
+  }
+  &__text,
+  &__map-text{
+    font-size: 18px;
+    line-height: 21px;
+    color: #ADADB0;
+  }
+  &__text{
+    padding-left: 22px;
+    margin-bottom: 34px;
+  }
+  &__item-box{
+    padding: 0 22px 27px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__percent,
+  &__map-percent{
+    font-size: 14px;
+    line-height: 16px;
+    color: #262626;
+  }
+  &__percent{
+    margin-right: 21px;
+  }
+  &__map-percent{
+    margin-bottom: 12px;
+  }
+  .star{
+    margin-right: 7px;
+  }
+  .star-map{
+    margin-left: 10px;
+  }
+  .jq-ry-container {
+    padding: 0; 
+  }
+  .slick-slide{
+    margin-right: 23px;
+  }
+  .slick-list{
+    padding: 30px 10px;
+  }
+  &__item-num{
+    font-size: 20px;
+    line-height: 23px;
+    color: #fff;
+    background-color: #55BC6B;
+    border-radius: 4px;
+    padding: 4px 6px;
+  }
+  &__maps{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__map{
+    padding: 33px 36px 36px 54px;
+    background-color: #EFF0F0;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__image{
+    margin: 0 76px 5px 0;
+  }
+  &__star-box{
+    margin-right: 46px;
+  }
+  &__num{
+    font-size: 43px;
+    line-height: 50px;
+    color: #fff;
+    padding: 11px 32px;
+    background-color: #55BC6B;
+    border-radius: 10px;
+  }
+}
+
+
+
+.groups,
+.offer,
+.partners,
+.rating{
+  .slider-btn{
+    position: absolute;
+    right: 0;
+    top: -98px;
+    width: 48px;
+    height: 48px;
+    box-shadow: 0px 0px 30px rgba(133, 147, 159, 0.3);
+    border-radius: 6px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+  }
+  .slider-btn__prev{
+    right: 60px;
+  }
+  .slider-btn:hover{
+    background-color: #CA0100;
+    path{
+      fill: #fff;
+    }
   }
 }
