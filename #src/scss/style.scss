@@ -1087,12 +1087,143 @@
   }
 }
 
+.reviews{
+  margin-bottom: 108px;
+  &__title{
+    margin-bottom: 44px;
+  }
+  &__items{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__item + .reviews__item{
+    margin-left: 30px;
+  }
+  &__top{
+    background-color: #262626;
+    background-image: url('../img/main/video-bg.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    border-radius: 25px 25px 0px 0px;
+    padding: 112px 190px;
+  }
+  &__content{
+    background-color: #F2F2F2;
+    border-radius: 0px 0px 25px 25px;
+    padding: 30px 30px 40px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+  }
+  &__author{
+    font-size: 20px;
+    line-height: 23px;
+    @extend %roboto-700;
+    color: #262626;
+    margin-bottom: 30px;
+  }
+  &__text{
+    font-size: 16px;
+    line-height: 24px;
+    color: #737373;
+    margin-bottom: 20px;
+  }
+  &__button{
+    max-width: 188px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: none;
+    background-color: #E1E1E1;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-size: 14px;
+    line-height: 14px;
+    @extend %roboto-700;
+    color: #262626;
+    cursor: pointer;
+  }
+}
+
+.about{
+  margin-bottom: 115px;
+  &__title{
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  &__text{
+    max-width: 924px;
+    font-size: 16px;
+    line-height: 26px;
+    color: #737373;
+    text-align: center;
+    margin: 0 auto 43px;
+  }
+  &__video{
+    background-image: url('../img/main/about-bg.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    height: 573px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.blog{
+  margin-bottom: 90px;
+  &__top{
+    margin-bottom: 115px;
+  }
+  &__title-box{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    margin-bottom: 50px;
+  }
+  &__title{
+    margin-right: 25px;
+  }
+  &__title-link{
+    font-size: 16px;
+    line-height: 24px;
+    color: #fff;
+    background-color: #CA0100;
+    border-radius: 11px;
+    padding: 6px 25px;
+  }
+  &__item-image{
+    margin-bottom: 23px;
+  }
+  &__item-data{
+    font-size: 14px;
+    line-height: 16px;
+    color: #ADADB0;
+    margin-bottom: 12px;
+  }
+  &__item-title{
+    max-width: 268px;
+  }
+  &__item-link{
+    font-size: 16px;
+    line-height: 19px;
+    @extend %roboto-700;
+    color: #262626;
+  }
+  .slick-slide{
+    margin-right: 30px;
+  }
+}
+
 
 
 .groups,
 .offer,
 .partners,
-.rating{
+.rating,
+.blog{
   .slider-btn{
     position: absolute;
     right: 0;
