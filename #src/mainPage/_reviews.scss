@@ -1,0 +1,73 @@
+@import '_vars';
+@import 'fonts';
+@import '_reset';
+@import '_libs';
+@import '_global';
+@import '_media';
+
+.reviews {
+  margin-bottom: 108px;
+
+  &__title {
+    margin-bottom: 44px;
+  }
+
+  &__items {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__item+.reviews__item {
+    margin-left: 30px;
+  }
+
+  &__top {
+    background-color: #262626;
+    background-image: url('../img/main/video-bg.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    border-radius: 25px 25px 0px 0px;
+    padding: 112px 190px;
+  }
+
+  &__content {
+    background-color: #F2F2F2;
+    border-radius: 0px 0px 25px 25px;
+    padding: 30px 30px 40px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+  }
+
+  &__author {
+    font-size: 20px;
+    line-height: 23px;
+    @extend %roboto-700;
+    color: #262626;
+    margin-bottom: 30px;
+  }
+
+  &__text {
+    font-size: 16px;
+    line-height: 24px;
+    color: #737373;
+    margin-bottom: 20px;
+  }
+
+  &__button {
+    max-width: 188px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: none;
+    background-color: #E1E1E1;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-size: 14px;
+    line-height: 14px;
+    @extend %roboto-700;
+    color: #262626;
+    cursor: pointer;
+  }
+}

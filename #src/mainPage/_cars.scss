@@ -1,0 +1,109 @@
+@import '_vars';
+@import 'fonts';
+@import '_reset';
+@import '_libs';
+@import '_global';
+@import '_media';
+
+.cars {
+  margin-bottom: 64px;
+
+  &__inner {
+    padding: 22px 30px;
+    background-color: #EFF0F0;
+    border-radius: 11px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__list {
+    display: flex;
+  }
+
+  &__items {
+    width: 138px;
+  }
+
+  &__items+.cars__items {
+    margin-left: 30px;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+  }
+
+  &__logo {
+    margin-right: 10px;
+  }
+
+  &__name {
+    font-size: 14px;
+    line-height: 41px;
+    color: #262626;
+  }
+
+  &__title {
+    font-size: 24px;
+    line-height: 28px;
+    @extend %roboto-900;
+    color: #262626;
+    margin-bottom: 22px;
+  }
+
+  &__filter-selects {
+    margin-bottom: 25px;
+  }
+
+  &__filter-price {
+    max-width: 490px;
+  }
+
+  .irs--flat.irs-with-grid {
+    height: 60px;
+    margin-bottom: 20px;
+  }
+
+  .jq-selectbox__select {
+    width: 237px;
+    padding: 22px 0px 36px 15px;
+    border: 1px solid #E1E1E1;
+    border-radius: 6px;
+    background: #fff;
+    box-shadow: none;
+    font-size: 14px;
+    line-height: 16px;
+    color: #262626;
+    text-shadow: none;
+  }
+
+  .jq-selectbox__trigger {
+    border-left: none;
+  }
+
+  .jq-selectbox__trigger-arrow {
+    position: absolute;
+    top: 24px;
+    right: 15px;
+    width: 12px;
+    height: 12px;
+    border: none;
+    background-image: url('../img/cars/angle-down.svg');
+  }
+
+  &__filter-body {
+    margin-right: 15px;
+  }
+
+  &__filter-btn {
+    padding: 17px 192px;
+    border: none;
+    color: #fff;
+    background-color: #CA0100;
+    border-radius: 6px;
+    font-size: 16px;
+    line-height: 19px;
+    @extend %roboto-700;
+    text-transform: uppercase;
+  }
+}

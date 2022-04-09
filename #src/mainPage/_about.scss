@@ -1,0 +1,35 @@
+@import '_vars';
+@import 'fonts';
+@import '_reset';
+@import '_libs';
+@import '_global';
+@import '_media';
+
+.about {
+  margin-bottom: 115px;
+
+  &__title {
+    margin-bottom: 30px;
+    text-align: center;
+  }
+
+  &__text {
+    max-width: 924px;
+    font-size: 16px;
+    line-height: 26px;
+    color: #737373;
+    text-align: center;
+    margin: 0 auto 43px;
+  }
+
+  &__video {
+    background-image: url('../img/main/about-bg.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    height: 573px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
