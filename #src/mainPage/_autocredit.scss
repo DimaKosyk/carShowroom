@@ -1,0 +1,285 @@
+@import '_vars';
+@import 'fonts';
+@import '_reset';
+@import '_libs';
+@import '_global';
+@import '_media';
+
+.autocredit {
+  margin-bottom: 72px;
+
+  &__bg {
+    background-color: #EFF0F0;
+    border-radius: 25px;
+    padding: 81px 0 135px;
+  }
+
+  &__title {
+    margin-bottom: 37px;
+  }
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__selects {
+    display: flex;
+    justify-content: center;
+    padding: 23px;
+    background-color: rgba(194, 194, 196, 0.5);
+    border-radius: 25px;
+    margin-bottom: 25px;
+  }
+
+  .irs--flat.js-irs-2.irs-with-grid {
+    margin-bottom: 35px;
+  }
+
+  .irs--flat.js-irs-3.irs-with-grid {
+    margin-bottom: 50px;
+  }
+
+  .jq-selectbox__select {
+    width: 280px;
+    padding: 13px 0px 31px 20px;
+    border: 1px solid #E1E1E1;
+    border-radius: 6px;
+    background: #fff;
+    box-shadow: none;
+    font-size: 14px;
+    line-height: 16px;
+    color: #262626;
+    text-shadow: none;
+  }
+
+  .jq-selectbox__trigger {
+    border-left: none;
+  }
+
+  .jq-selectbox__trigger-arrow {
+    position: absolute;
+    top: 17px;
+    right: 16px;
+    width: 12px;
+    height: 12px;
+    border: none;
+    background-image: url('../img/cars/angle-down.svg');
+  }
+
+  &__select+.autocredit__select {
+    margin-left: 18px;
+  }
+
+  &__filters-box {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__image-box {
+    .irs--flat .irs-bar {
+      display: none;
+    }
+
+    .irs-handle.single {
+      display: none;
+    }
+  }
+
+  &__image {
+    margin-bottom: 10px;
+  }
+
+  &__contribution-nums {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__contribution-nums span {
+    width: 78px;
+    height: 23px;
+    background-color: #ADADB0;
+    border-radius: 30px;
+    font-size: 16px;
+    line-height: 19px;
+    @extend %roboto-900;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__contribution-texts {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__contribution-text,
+  &__balance-text {
+    font-size: 16px;
+    line-height: 19px;
+    color: #ADADB0;
+  }
+
+  &__balance-text {
+    text-align: right;
+  }
+
+  &__inputs-box {
+    margin-top: 15px;
+  }
+
+  &__input-text {
+    font-size: 16px;
+    line-height: 19px;
+    color: #262626;
+    margin-right: 40px;
+  }
+
+  &__input-price,
+  &__input-term {
+    display: block;
+  }
+
+  &__input-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__price-text,
+  &__term-text {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+
+  &__price-text span,
+  &__term-text span {
+    font-size: 36px;
+    line-height: 42px;
+  }
+
+  &__input-form {
+    width: 250px;
+    height: 65px;
+    padding: 0 25px;
+    border: 1px solid #E1E1E1;
+    border-radius: 6px;
+    font-size: 16px;
+    line-height: 19px;
+    color: #ADADB0;
+  }
+
+  &__input-form::placeholder {
+    color: #ADADB0;
+  }
+
+  &__profit {
+    max-width: 447px;
+    background: #FFFFFF;
+    border-radius: 25px;
+    padding: 41px 30px;
+  }
+
+  &__profit-title {
+    font-size: 30px;
+    line-height: 34px;
+    @extend %roboto-700;
+    color: #262626;
+    margin-bottom: 13px;
+  }
+
+  &__profit-title span {
+    color: #CA0100;
+  }
+
+  &__profit-form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__profit-input {
+    border: 1px solid #E1E1E1;
+    border-radius: 6px;
+    padding: 22px 24px;
+    margin-bottom: 10px;
+  }
+
+  &__profit-input::placeholder {
+    font-size: 16px;
+    line-height: 19px;
+    color: #262626;
+  }
+
+  &__profit-button {
+    background-color: #CA0100;
+    border-radius: 6px;
+    font-size: 16px;
+    line-height: 19px;
+    @extend %roboto-700;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    border: none;
+    padding: 23px 0;
+    margin-bottom: 22px;
+  }
+
+  &__profit-text {
+    font-size: 13px;
+    line-height: 17px;
+    text-align: center;
+    color: #737373;
+  }
+
+  &__profit-text span {
+    text-decoration: underline;
+  }
+
+  .irs-grid-pol {
+    display: none;
+  }
+
+  .irs-grid-text {
+    @extend %roboto-700;
+    font-size: 11px;
+    line-height: 13px;
+    padding: 0;
+    color: #ADADB0;
+  }
+
+  .irs-max,
+  .irs-min {
+    display: none;
+  }
+
+  .irs--flat .irs-line {
+    top: 20px;
+    height: 6px;
+    background-color: #e1e1e1;
+    border-radius: 6px;
+  }
+
+  .irs--flat .irs-handle {
+    top: 16px;
+    width: 14px;
+    height: 14px;
+    background-color: #CA0100;
+    border-radius: 50%;
+  }
+
+  .irs--flat .irs-handle>i:first-child {
+    display: none;
+  }
+
+  .irs--flat .irs-bar {
+    top: 20px;
+    height: 6px;
+    background-color: #CA0100;
+  }
+
+  .irs-single {
+    display: none;
+  }
+}

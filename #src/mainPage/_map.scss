@@ -1,0 +1,76 @@
+@import '_vars';
+@import 'fonts';
+@import '_reset';
+@import '_libs';
+@import '_global';
+@import '_media';
+
+.map {
+  &__inner {
+    position: relative;
+  }
+
+  &__content {
+    position: absolute;
+    top: 107px;
+    right: 235px;
+    background-color: #fff;
+    padding: 34px 29px 25px;
+    box-shadow: 0px 0px 30px rgba(133, 147, 159, 0.3);
+    border-radius: 15px;
+  }
+
+  &__phone,
+  &__worktime,
+  &__address {
+    display: flex;
+  }
+
+  &__worktime {
+    align-items: center;
+  }
+
+  &__phone-img,
+  &__worktime-img,
+  &__address-img {
+    margin-right: 12px;
+  }
+
+  &__numbers-link,
+  &__worktime-text,
+  &__address-text {
+    display: block;
+    font-size: 16px;
+    line-height: 19px;
+    color: #262626;
+  }
+
+  &__phone {
+    margin-bottom: 11px;
+  }
+
+  &__numbers-link {
+    margin-bottom: 5px;
+  }
+
+  &__worktime,
+  &__address {
+    margin-bottom: 19px;
+  }
+
+  &__button {
+    font-size: 16px;
+    line-height: 19px;
+    @extend %roboto-700;
+    color: #fff;
+    text-transform: uppercase;
+    background-color: #CA0100;
+    border-radius: 6px;
+    border: none;
+    padding: 16px 28px;
+  }
+
+  iframe {
+    max-width: 100%;
+  }
+}

@@ -1,0 +1,18 @@
+@import '_vars';
+@import 'fonts';
+@import '_reset';
+@import '_libs';
+@import '_global';
+@import '_media';
+
+.partners {
+  margin-bottom: 110px;
+
+  &__title {
+    margin-bottom: 45px;
+  }
+
+  .slick-slide {
+    margin-right: 30px;
+  }
+}
